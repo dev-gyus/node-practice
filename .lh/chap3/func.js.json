@@ -1,0 +1,22 @@
+{
+    "sourceFile": "chap3/func.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1745995233726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1745995272720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+const varObj = require('./var');\n+const { odd, even } = require('./var');\n+\n+console.log(`odd = ${varObj.odd} / even = ${varObj.even}`);\n+console.log(`odd = ${odd} / even = ${even}`);\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1745995233726,
+            "name": "Commit-0",
+            "content": "const varObj = require('./var');\nconst { odd, even } = require('')"
+        }
+    ]
+}
