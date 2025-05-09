@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+            <input type="file" name="image" placeholder="이미지를 업로드하세요">
+            <button type="submit">제출</button>
+        </form>
+        <form method="POST" action="/upload-multiple" enctype="multipart/form-data">
+            <input type="file" name="image" placeholder="이미지를 업로드하세요" multiple>
+            <button type="submit">제출</button>
+        </form>
+        <form method="POST" action="/upload-images" enctype="multipart/form-data">
+            <input type="file" name="image1" placeholder="이미지를 업로드하세요">
+            <input type="file" name="image2" placeholder="이미지를 업로드하세요">
+            <input type="file" name="image3" placeholder="이미지를 업로드하세요">
+            <button type="submit">제출</button>
+        </form>
+        <form method="POST" action="/upload-none" enctype="multipart/form-data">
+            <input type="text" name="title" placeholder="제목">
+            <button type="submit">제출</button>
+        </form>
+    </body>
+</html>
