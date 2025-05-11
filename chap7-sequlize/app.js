@@ -7,7 +7,7 @@ const { sequelize } = require('./models');
 const indexRouter = require('./router/index');
 
 const app = express();
-app.set('port', process.env.PORT || 3001);
+const PORT = process.env.PORT || 3000;
 app.set('view engine', 'html');
 nunjucks.configure('views', {
     express: app,
@@ -42,4 +42,4 @@ app.use((err, req, res, next) => {
     res.render('error');
 })
 
-app.listen(() => { console.log('서버 이니셜라이즈 완료') });
+app.listen(PORT, () => { console.log('서버 이니셜라이즈 완료') });
